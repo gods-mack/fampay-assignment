@@ -21,10 +21,10 @@
   
   
 ### API Contracts
-  - Get All Video -> `http://0.0.0.0:8000/api/video/`
-  - Search Video by title -> `http://0.0.0.0:8000/api/search/?title=maroon`
-  - Search by description -> `http://0.0.0.0:8000/api/search/?desc=maroon`
-  - Search by Partial Query ("How to make tea" -> "tea how") -> `http://0.0.0.0:8000/api/search/?partial_query=how tea`
+  - Get All Video `GET` -> `http://0.0.0.0:8000/api/video/`
+  - Search Video by title `GET`-> `http://0.0.0.0:8000/api/search/?title=maroon`
+  - Search by description  `GET`-> `http://0.0.0.0:8000/api/search/?desc=maroon`
+  - Search by Partial Query ("How to make tea" -> "tea how") `GET`-> `http://0.0.0.0:8000/api/search/?partial_query=how tea`
 
 
 
