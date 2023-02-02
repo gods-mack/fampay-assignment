@@ -2,7 +2,7 @@
 # FamTube
 
 
-### Run Server
+### Run Server Guide
  - go to project dir -> `cd FamTube`
  - create virtualenv `python3 -m virtualenv venv` and activate
  - install python Libs `pip install -r requirements.txt`
