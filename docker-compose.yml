@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  famtube:
+    build:
+      context: .
+    container_name: famtube
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./famtube:/famtube
+    command: >
+      bash -c "python3 manage.py migrate &&
+             python3 manage.py wait_for_db &&
+             python3 manage.py runserver 0.0.0.0:8000"
+
+  redis:
+    image: redis:alpine
+    command: ["redis-server", "--bind", "redis", "--port", "6379"]
+  celery:
+    restart: always
+    build:
+      context: .
+    command: celery -A FamTube worker -l info
+    volumes:
+      - ./famtube:/famtube
+    depends_on:
+      - redis
+      - famtube
+volumes:
+  pgdata:
