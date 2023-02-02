@@ -15,7 +15,7 @@
   - Celery-Worker - `celery -A FamTube worker -l info`
   - start Redis - `redis.server`
 
-### Docker setups (Pending)
+### Docker setups (Pending - Couldn't complete Docker part)
   - docker-compose -up build
   
   
