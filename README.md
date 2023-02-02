@@ -10,10 +10,15 @@
  - run Django App `python3 manage.py runserver 0:8001`
  
 
- ### Scheduler:
+ ### Celery/Scheduler and Redis cmds:
   - Celery-beat - `celery -A FamTube beat -l info`
   - Celery-Worker - `celery -A FamTube worker -l info`
   - start Redis - `redis.server`
+
+### Docker setups (Pending)
+  - docker-compose -up build
+
+
 
 
 
