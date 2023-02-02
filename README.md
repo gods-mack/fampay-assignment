@@ -3,6 +3,7 @@
 
 
 ### Run Server
+ - go to project dir -> `cd FamTube`
  - create virtualenv `python3 -m virtualenv venv` and activate
  - install python Libs `pip install -r requirements.txt`
  - `python manage.py makemigrations`
